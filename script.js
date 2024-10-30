@@ -4,7 +4,7 @@ const sendMessageButton = document.getElementById("enter");
 
 // Mengasilkan response bot terhadap penggunaan API
 const generateBotResponse = async (inComingMessageDiv) => {
-  const messageElement = inComingMessageDiv.querySelector(".message-text");
+  const massageElement = inComingMessageDiv.querySelector(".message-text");
 
   const requestOption = {
     method: "POST",
@@ -26,10 +26,10 @@ const generateBotResponse = async (inComingMessageDiv) => {
 
     // Mengambil jawaban Bot dalam bentuk text
     const apiResponseText = data.candidates[0].content.parts[0].text.replace(/\*\*(.*?)\*\*/g, "$1").trim();
-    messageElement.innerText = apiResponseText;
+    massageElement.innerText = apiResponseText;
 } catch (error) {
-      messageElement.innerText = error.message;
-      messageElement.style.color = "#ff0000";
+      massageElement.innerText = error.message;
+      massageElement.style.color = "#ff0000";
     console.log(error);
   } finally {
     inComingMessageDiv.classList.remove("thinking");
