@@ -4,7 +4,7 @@ const sendMessageButton = document.getElementById("enter");
 
 // Mengasilkan response bot terhadap penggunaan API
 const generateBotResponse = async (inComingMessageDiv) => {
-  const massageElement = inComingMessageDiv.querySelector(".message-text");
+  const messageElement = inComingMessageDiv.querySelector(".message-text");
 
   const requestOption = {
     method: "POST",
