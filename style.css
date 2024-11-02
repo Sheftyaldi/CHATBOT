@@ -38,8 +38,8 @@ body {
 
 /* Body chat */
 .chat-body {
-  max-height: 80vh;
-  min-height: 80vh;
+  max-height: 85vh;
+  min-height: 420px;
   display: flex;
   flex-direction: column;
   padding: 6px;
@@ -70,6 +70,7 @@ body {
 .message .message-text {
   background-color: darkorchid;
   width: auto;
+  height: auto;
   padding: 6px 8px;
   margin-bottom: 4px;
   border-radius: 10px;
