@@ -127,6 +127,7 @@ body {
   width: 100%;
   position: absolute;
   overlay: hidden;
+  background-color: #ffffff;
   bottom: 0;
 }
 
