@@ -126,6 +126,7 @@ body {
   display: flex;
   width: 100%;
   position: absolute;
+  overlay: hidden;
   bottom: 0;
 }
 
