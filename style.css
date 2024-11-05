@@ -104,7 +104,7 @@ body.show-chatbot .chatbot-popup {
 
 .message.bot-message .message-text {
   background-color: rgb(209, 203, 209);
-  padding: 0 8px;
+  padding: 0 8px 14px;
   border-radius: 13px 13px 13px 3px;
 }
 
